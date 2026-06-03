@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Exploration</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:50px 50px,100px 100px;
+    background-position:0 0,25px 25px;
+
+    opacity:0.3;
+    z-index:-1;
+
+    animation:starsMove 30s linear infinite;
+}
+
+@keyframes starsMove{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(100px);
+    }
+}
+
+header{
+    text-align:center;
+    padding:40px;
+    background:#0b1026;
+}
+
+header h1{
+    font-size:55px;
+
+    text-shadow:
+    0 0 10px #38bdf8,
+    0 0 20px #38bdf8,
+    0 0 40px #38bdf8;
+}
+
+header p{
+    margin-top:10px;
+}
+
+nav{
+    background:#111827;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+    animation:fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-image{
+    width:80%;
+    max-width:700px;
+    margin-top:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+.card{
+    background:#111827;
+    margin:20px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.6),
+    0 0 40px rgba(56,189,248,0.3);
+}
+
+.card h2{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.gallery{
+    width:30%;
+    margin:10px;
+    border-radius:15px;
+    transition:0.5s;
+}
+
+.gallery:hover{
+    transform:scale(1.08);
+}
+
+.rocket{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    font-size:50px;
+    animation:floatRocket 4s ease-in-out infinite;
+}
+
+@keyframes floatRocket{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b1026;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+<div class="rocket">🚀</div>
+<header>
+    <h1>🚀 Space Exploration</h1>
+    <p>Journey Beyond the Earth</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#planets">Planets</a>
+    <a href="#missions">Missions</a>
+    <a href="#future">Future</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to the Universe</h2>
+    <p>
+        Discover planets, stars, galaxies, and the exciting future of space travel.
+        Space exploration has helped humanity understand the universe and inspired
+        generations of scientists, engineers, and dreamers.
+    </p>
+
+    <img
+    src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200"
+    alt="Space"
+    class="hero-image">
+</section>
+
+<section id="about" class="card">
+    <h2>🌌 About Space</h2>
+    <p>
+Space is the vast region beyond Earth's atmosphere where planets, stars,
+moons, asteroids, comets, and galaxies exist. It is nearly a perfect vacuum,
+meaning it contains very little matter. Scientists have been studying space
+for centuries to understand how the universe was formed and how it continues
+to change. Through powerful telescopes and advanced spacecraft, humans have
+discovered countless wonders beyond our planet. Space exploration helps us
+learn about the origins of Earth, the possibility of life on other planets,
+and the future of humanity. Every new discovery brings us closer to
+understanding the mysteries of the universe.
+</p>
+</section>
+
+<section id="planets" class="card">
+    <h2>🪐 Our Solar System</h2>
+   <p>
+The Solar System consists of the Sun and all the objects that orbit around it.
+There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+Uranus, and Neptune. Earth is the third planet from the Sun and the only
+known planet that supports life. Jupiter is the largest planet, while Mercury
+is the smallest. Besides planets, the Solar System also contains dwarf
+planets, moons, asteroids, and comets. The Sun provides heat and light to all
+the planets and is the center of our Solar System. Scientists continue to
+study the Solar System to learn more about its formation and evolution.
+</p>
+</section>
+
+<section id="missions" class="card">
+    <h2>🚀 Famous Space Missions</h2>
+   <p>
+The Solar System consists of the Sun and all the objects that orbit around it.
+There are eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+Uranus, and Neptune. Earth is the third planet from the Sun and the only
+known planet that supports life. Jupiter is the largest planet, while Mercury
+is the smallest. Besides planets, the Solar System also contains dwarf
+planets, moons, asteroids, and comets. The Sun provides heat and light to all
+the planets and is the center of our Solar System. Scientists continue to
+study the Solar System to learn more about its formation and evolution.
+</p> 
+</section>
+
+<section id="future" class="card">
+    <h2>🔭 Future of Space Travel</h2>
+    <p>
+The future of space travel is exciting and full of possibilities. Scientists
+are working on technologies that may allow humans to live on the Moon and Mars
+in the coming decades. Private companies are also developing spacecraft for
+space tourism, allowing ordinary people to experience space travel. Advanced
+robots and artificial intelligence will help explore dangerous environments
+where humans cannot easily go. New telescopes will search for planets that may
+support life. As technology continues to improve, future generations may
+travel deeper into space than ever before and unlock even more secrets of the
+universe.
+</p>
+</section>
+
+<section class="card">
+    <h2>👨‍🚀 Why Space Exploration Matters</h2>
+    <p>
+    Space exploration has improved life on Earth in many ways. Technologies
+    developed for space missions have led to advancements in communication,
+    weather forecasting, navigation systems, and medical equipment. Studying
+    space also helps scientists monitor climate change and protect our planet.
+    Exploration inspires young minds to pursue careers in science,
+    technology, engineering, and mathematics. By exploring space, humanity
+    gains knowledge, develops new technologies, and prepares for future
+    challenges.
+    </p>
+</section>
+
+<section class="card">
+    <h2>📸 Space Gallery</h2>
+
+    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600"
+    class="gallery" alt="Galaxy">
+
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600"
+    class="gallery" alt="Earth from Space">
+
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600"
+    class="gallery" alt="Nebula">
+</section>
+
+<footer>
+    <p>Created by Class 8 Student | Subject Enrichment Activity</p>
+</footer>
+
+</body>
+</html>
